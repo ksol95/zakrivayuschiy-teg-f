@@ -83,6 +83,7 @@
   content: "▶";
   opacity: 0;
   font-size: 14px;
+  color: currentColor;
   -webkit-transform: translateX(-5px);
       -ms-transform: translateX(-5px);
           transform: translateX(-5px);
