@@ -92,7 +92,7 @@
     transition: opacity 0.3s ease;
   }
 
-  .theme-menu__button::before {
+  .theme-menu__button::after {
     -webkit-transition: scale 0.3s ease;
     transition: scale 0.3s ease;
   }
