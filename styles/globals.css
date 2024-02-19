@@ -3,9 +3,10 @@
 Вы можете изменять этот файл или дополнять. Но скорее всего, вам это не потребуется. */
 
 *,
-*::after,
+*::before,
 *::before {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -48,6 +49,7 @@ ol {
   block-size: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
   white-space: nowrap;
 }

@@ -1,0 +1,7 @@
+node_modules/
+dist/
+pp/
+.DS_Store
+.idea
+.vscode
+gulpfile.js
