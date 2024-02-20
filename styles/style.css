@@ -181,6 +181,7 @@
   display: -ms-flexbox;
   display: flex;
   aspect-ratio: 1 / 1;
+  overflow: hidden;
 }
 
 .card__image {
