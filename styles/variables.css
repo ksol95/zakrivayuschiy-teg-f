@@ -9,17 +9,26 @@
   --hover-color: var(--main-color);
   --heart-contour-color: var(--main-color);
   --heart-main-color: #ff0000;
+  /* сглаживание пикселя градиента для мониторов х1 */
+  --gradient-size-odd: 0 2px;
+  --gradient-size-even: 3px 5px;
   --gradient: repeating-linear-gradient(
-      var(--bg-color) 0 2px,
-      transparent 2px 4px
+      var(--bg-color) var(--gradient-size-odd),
+      transparent var(--gradient-size-even)
     ),
     repeating-linear-gradient(
       -90deg,
-      var(--bg-color) 0 2px,
-      transparent 2px 4px
+      var(--bg-color) var(--gradient-size-odd),
+      transparent var(--gradient-size-even)
     ),
     linear-gradient(180deg, #007f0c 0%, #004306 100%);
   --border: 2px solid var(--main-color);
   --font-weight-title: 785;
   --font-weight-text: 465;
+}
+@media (min-resolution: 2dppx) {
+  :root{
+    --gradient-size-odd: 0 2px;
+    --gradient-size-even: 2px 4px;
+  }
 }

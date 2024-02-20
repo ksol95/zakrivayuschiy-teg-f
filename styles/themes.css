@@ -12,13 +12,13 @@
   --heart-contour-color: var(--main-color);
   --heart-main-color: #ff0000;
   --gradient: repeating-linear-gradient(
-      var(--bg-color) 0 2px,
-      transparent 2px 4px
+      var(--bg-color) var(--gradient-size-odd),
+      transparent var(--gradient-size-even)
     ),
     repeating-linear-gradient(
       -90deg,
-      var(--bg-color) 0 2px,
-      transparent 2px 4px
+      var(--bg-color) var(--gradient-size-odd),
+      transparent var(--gradient-size-even)
     ),
     linear-gradient(180deg, #007f0c 0%, #004306 100%);
   --border: 2px solid var(--main-color);
@@ -32,8 +32,15 @@
   --hover-color: #fff;
   --heart-contour-color: #000;
   --heart-main-color: #ff0000;
-  --gradient: repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
-    repeating-linear-gradient(-90deg, #d3d3d3 0 2px, transparent 2px 4px),
+  --gradient: repeating-linear-gradient(
+      var(--bg-color) var(--gradient-size-odd),
+      transparent var(--gradient-size-even)
+    ),
+    repeating-linear-gradient(
+      -90deg,
+      var(--bg-color) var(--gradient-size-odd),
+      transparent var(--gradient-size-even)
+    ),
     linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
   --border: 2px solid var(--main-color);
   --font-weight-title: 700;
@@ -47,8 +54,15 @@
     --hover-color: #fff;
     --heart-contour-color: #000;
     --heart-main-color: #ff0000;
-    --gradient: repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
-      repeating-linear-gradient(-90deg, #d3d3d3 0 2px, transparent 2px 4px),
+    --gradient: repeating-linear-gradient(
+        var(--bg-color) var(--gradient-size-odd),
+        transparent var(--gradient-size-even)
+      ),
+      repeating-linear-gradient(
+        -90deg,
+        var(--bg-color) var(--gradient-size-odd),
+        transparent var(--gradient-size-even)
+      ),
       linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
     --border: 2px solid var(--main-color);
     --font-weight-title: 700;
@@ -64,13 +78,13 @@
     --heart-contour-color: var(--main-color);
     --heart-main-color: #ff0000;
     --gradient: repeating-linear-gradient(
-        var(--bg-color) 0 2px,
-        transparent 2px 4px
+        var(--bg-color) var(--gradient-size-odd),
+        transparent var(--gradient-size-even)
       ),
       repeating-linear-gradient(
         -90deg,
-        var(--bg-color) 0 2px,
-        transparent 2px 4px
+        var(--bg-color) var(--gradient-size-odd),
+        transparent var(--gradient-size-even)
       ),
       linear-gradient(180deg, #007f0c 0%, #004306 100%);
     --border: 2px solid var(--main-color);
@@ -78,3 +92,4 @@
     --font-weight-text: 465;
   }
 }
+
