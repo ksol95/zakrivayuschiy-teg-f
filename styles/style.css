@@ -181,6 +181,7 @@
   display: -ms-flexbox;
   display: flex;
   aspect-ratio: 1 / 1;
+  /* Убераю "свечение" от изображений выходящее за границы из-за фильтра blur */
   overflow: hidden;
 }
 
@@ -208,7 +209,10 @@
   mix-blend-mode: hard-light;
 }
 
-@supports ((text-stroke: 1px var(--bg-color)) or (-webkit-text-stroke: 1px var(--bg-color))) {
+@supports (
+  (text-stroke: 1px var(--bg-color)) or
+    (-webkit-text-stroke: 1px var(--bg-color))
+) {
   .card__watermark {
     text-shadow: none;
     -webkit-text-stroke: thin var(--bg-color);
