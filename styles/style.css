@@ -43,7 +43,7 @@
   border: var(--border);
   padding-block-start: clamp(7.5rem, 7.1039rem + 1.6901vw, 8.625rem);
   padding-block-end: var(--padding);
-  font-family: var(--accent-font), fantasy, serif;
+  font-family: var(--accent-font), fantasy, sans-serif;
   background-color: var(--bg-color);
   /* отступ сверху от 120px до 138px */
   -webkit-padding-before: clamp(7.5rem, 7.1039rem + 1.6901vw, 8.625rem);
@@ -57,18 +57,18 @@
   gap: 20px;
 }
 
-.header-logo__title {
+.header-logo__link {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.header-logo__title:focus {
+.header-logo__link:focus {
   outline: 0;
 }
 
-.header-logo__subtitle {
+.header-logo__title {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
 }
