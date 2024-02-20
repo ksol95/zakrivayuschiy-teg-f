@@ -10,8 +10,8 @@
   --heart-contour-color: var(--main-color);
   --heart-main-color: #ff0000;
   /* сглаживание пикселя градиента для мониторов х1 */
-  --gradient-size-odd: 0 2px;
-  --gradient-size-even: 3px 5px;
+  --gradient-size-odd: 0 1.6px;
+  --gradient-size-even: 1.6px 3.2px;
   --gradient: repeating-linear-gradient(
       var(--bg-color) var(--gradient-size-odd),
       transparent var(--gradient-size-even)
