@@ -27,7 +27,7 @@
   --font-weight-text: 465;
 }
 @media (min-resolution: 2dppx) {
-  :root{
+  :root {
     --gradient-size-odd: 0 2px;
     --gradient-size-even: 2px 4px;
   }
